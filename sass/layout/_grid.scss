@@ -1,5 +1,6 @@
 .row {
     margin: 0 auto;
+    padding: 0 4% 0 10%;
     max-width: $grid-width;
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
@@ -8,11 +9,11 @@
     @include clearfix;
     
     [class^="col-"]{
-        border-radius: 2px;
+        border-radius: 5px;
         float: left;
         padding: 0 3% 0;
         &:not(:last-child){
-            margin-right: $gutter-horizontal;
+            margin-right: 2rem;
         }
     }
 

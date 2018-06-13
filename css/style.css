@@ -35,7 +35,7 @@
   /*border: 1px solid red; //got that*/ }
 
 body {
-  font-family: 'GeosansLight';
+  font-family: 'Lato';
   font-weight: 800;
   font-size: 16px;
   line-height: 1.7;
@@ -165,7 +165,7 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 36rem; }
+  height: 50rem; }
   .card__side {
     width: 100%;
     height: 36rem;
@@ -204,17 +204,17 @@ body {
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../images/nat-7.jpg); }
   .card__heading {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
     color: #fff;
     position: absolute;
-    top: 13rem;
-    right: .8rem;
-    width: 50%; }
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
   .card__heading-span {
-    padding: 1rem 1.5rem;
+    padding: .5rem 1rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
@@ -228,6 +228,7 @@ body {
     width: 80%;
     margin: 0 auto; }
     .card__details ul li {
+      color: #5c626d;
       text-align: center;
       font-size: .8rem;
       padding: 1rem; }
@@ -240,15 +241,16 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
-  .card__price-box {
+  .card__price--box {
     text-align: center;
     color: #fff;
-    margin-bottom: 8rem; }
+    margin-bottom: 6rem; }
   .card__price-only {
+    font-weight: 300;
     font-size: 1.4rem;
     text-transform: uppercase; }
   .card__price-value {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 100; }
 
 .composition {
@@ -300,29 +302,30 @@ body {
 
 .row {
   margin: 0 auto;
-  max-width: 100rem; }
+  padding: 0 4% 0 10%;
+  max-width: 114rem; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 6rem; }
   .row::after {
     content: "";
     display: block;
     clear: both; }
   .row [class^="col-"] {
-    border-radius: 2px;
+    border-radius: 5px;
     float: left;
     padding: 0 3% 0; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 2rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 2rem)/2); }
+    width: calc((100% - 6rem)/2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 2rem)/3); }
+    width: calc((100% - 2 * 6rem)/3); }
   .row .col-2-of-3 {
-    width: calc(100% - (100% - 2 * 2rem)/3 - 2rem); }
+    width: calc(100% - (100% - 2 * 6rem)/3 - 6rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 2rem)/4); }
+    width: calc((100% - 3 * 6rem)/4); }
   .row .col-2-of-4 {
-    width: calc(100% - 2* (100% - 3 * 2rem)/4 - 2 * 2rem); }
+    width: calc(100% - 2* (100% - 3 * 6rem)/4 - 2 * 6rem); }
 
 .header {
   height: 95vh;
