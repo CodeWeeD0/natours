@@ -48,6 +48,18 @@
 			border-radius: 300px;
 		}
 	}
+
+	&-green{
+		background-color: $color-primary;
+		color: $color-white;
+		border-radius: 300px;
+
+		&::after{
+			background-color: $color-primary;
+			color: $color-white;
+			border-radius: 300px;
+		}
+	}
 	
 	&-animate{
 		animation: moveInBottom 0.9s 0.7s;

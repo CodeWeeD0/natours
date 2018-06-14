@@ -31,6 +31,7 @@ body{
 }
 
 .heading-secondary{
+	backface-visibility: hidden;
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -48,9 +49,10 @@ body{
 }
 
 .heading-tertiary{
+	backface-visibility: hidden;
 	color: #000;
 	font-size: 1.2rem;
-	font-weight: 900;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
