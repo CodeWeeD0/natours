@@ -11,8 +11,7 @@
         top: 0;
         left: 0;
         backface-visibility: hidden;
-        border-radius: 3px;
-        overflow: hidden;
+        border-radius: 20px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .150);
         &--front{
             background-color: $color-white;
@@ -51,8 +50,8 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
 
         &--1{
             background-image: linear-gradient(to right bottom, 
@@ -76,8 +75,8 @@
         color: $color-white;
         position: absolute;
         top: 12rem;
-        right: 2rem;
-        width: 75%;
+        right: 1rem;
+        width: 80%;
     }
 
     &__heading-span{
