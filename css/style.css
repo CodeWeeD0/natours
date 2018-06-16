@@ -39,7 +39,7 @@ body {
   font-weight: 800;
   font-size: 16px;
   line-height: 1.7;
-  color: #bfc0c1;
+  color: #fff;
   padding: 30px; }
 
 .heading-primary {
@@ -332,13 +332,25 @@ body {
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem) skew(12deg); }
+    transform: translateX(-3rem) skew(12deg);
+    position: relative; }
   .story__img {
     height: 100%; }
   .story__text {
     transform: skew(12deg); }
-  .story p {
-    font-weight: 400; }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0;
+    transition: all .5s; }
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
 
 .row {
   margin: 0 auto;
