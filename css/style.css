@@ -238,16 +238,16 @@ body {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../images/nat-7.jpg); }
   .card__heading {
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: right;
     color: #fff;
     position: absolute;
     top: 12rem;
     right: 1rem;
-    width: 80%; }
+    width: 82%; }
   .card__heading-span {
-    padding: .5rem 1rem;
+    padding: .5rem .8rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
@@ -264,6 +264,7 @@ body {
       color: #5c626d;
       text-align: center;
       font-size: .8rem;
+      font-weight: 400;
       padding: 1rem; }
       .card__details ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
@@ -333,6 +334,14 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.form__input {
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none; }
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -359,6 +368,7 @@ body {
   .story__text {
     transform: skew(12deg); }
   .story__caption {
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -460,4 +470,4 @@ body {
   height: 40rem; }
   .book__form {
     width: 50%;
-    padding: 0 2rem; }
+    padding: 0 4rem; }

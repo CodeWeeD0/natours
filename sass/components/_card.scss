@@ -69,18 +69,18 @@
 
     &__heading{
         font-size: 1.6rem;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         text-align: right;
         color: $color-white;
         position: absolute;
         top: 12rem;
         right: 1rem;
-        width: 80%;
+        width: 82%;
     }
 
     &__heading-span{
-        padding: .5rem 1rem;
+        padding: .5rem .8rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
         &--1{
@@ -107,6 +107,7 @@
                 color: #5c626d;
                 text-align: center;
                 font-size: .8rem;
+                font-weight: 400;
                 padding: 1rem;
 
                 &:not(:last-child){
