@@ -464,12 +464,12 @@ body {
     right: 2.5rem;
     display: inline-block;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: #999; }
     .popup__close:hover {
       color: #55c57a; }
   .popup__content {
-    width: 75%;
+    width: 70%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -500,8 +500,9 @@ body {
     width: 100%; }
   .popup__text {
     padding-right: 2rem;
-    font-size: 1rem;
-    font-weight: 300;
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 350;
     column-count: 2;
     column-gap: 2rem;
     column-rule: 1px solid #999;
