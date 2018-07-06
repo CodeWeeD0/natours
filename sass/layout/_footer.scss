@@ -1,8 +1,8 @@
 .footer{
     background-color: $color-grey-dark-3;
     padding: 10rem 0;
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: $heading_tertiary_fs;
+    font-weight: 400;
 
     &__logo-box{
         text-align: center;
@@ -25,7 +25,7 @@
     }
 
     &__item{
-        font-size: 1rem;
+        font-size: $paragraph_fs;
         display: inline-block;
         &:not(:last-child){
             margin-right: 1.2rem;

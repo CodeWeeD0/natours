@@ -1,5 +1,6 @@
 .row {
     margin: 0 auto;
+    //margin-left: auto;
     padding: 0 2% 2% 10%;
     max-width: $grid-width;
     &:not(:last-child){
@@ -11,9 +12,9 @@
     [class^="col-"]{
         border-radius: 5px;
         float: left;
-        padding: 0 3% 0;
+        padding: 0 2% 0;
         &:not(:last-child){
-            margin-right: 2rem;
+            margin-right: 3rem;
         }
     }
 

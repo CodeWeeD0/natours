@@ -1,10 +1,10 @@
 body{
 	font-family: 'Lato';
-	font-weight: 800;
-	font-size: 16px;
+	font-weight: 400;
+	//font-size: 14px;
 	line-height: 1.7;
 	color:  $color-grey-dark;
-	padding: 30px;
+	padding: 20px;
 }
 
 .heading-primary{
@@ -15,25 +15,25 @@ body{
 
 	&-main{
 		display: block;
-		font-size: 60px;
+		font-size: $heading_primary_fs;
 		font-weight: 400;
-		letter-spacing: 35px;
+		letter-spacing: 30px;
 		animation: moveInTop 0.9s;
 	}
 
 	&-sub{
 		display: block;
-		font-size: 20px;
-		font-weight: 700;
-		letter-spacing: 17.4px;
+		font-size: $heading_primary_fs -3.5;
+		font-weight: 550;
+		letter-spacing: 15.4px;
 		animation: moveInLeft 0.9s;
 	}
 }
 
 .heading-secondary{
-	margin-top: 15rem;
+	margin-top: 20rem;
 	backface-visibility: hidden;
-	font-size: 1.5rem;
+	font-size: $heading_secondary_fs;
 	text-transform: uppercase;
 	font-weight: 700;
 	display: inline-block;
@@ -52,15 +52,15 @@ body{
 .heading-tertiary{
 	backface-visibility: hidden;
 	color: #000;
-	font-size: 1.2rem;
+	font-size: $heading_tertiary_fs;
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
 .paragraph{
-	font-size: 1rem;
+	font-size: $paragraph_fs;
 	color: #768275;
-	font-weight: 600;
+	font-weight: 450;
 	&:not(:last-child){
 		margin-bottom: 3rem;
 	}

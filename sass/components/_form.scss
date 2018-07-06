@@ -5,7 +5,7 @@
 
     &__input{
         color:inherit;
-        font-size: 1.2rem;
+        font-size: $paragraph_fs;
         font-family: inherit;
         padding: 1.5rem 2rem;
         border-radius: 2px;
@@ -35,7 +35,7 @@
     
 
     &__label{
-        font-size: 1rem;
+        font-size: $paragraph_fs;
         font-weight: 550;
         margin-top: .7rem;
         margin-left: 2rem;
@@ -59,7 +59,7 @@
     }
 
     &__radio-label{
-        font-size: 1.2rem;
+        font-size: $paragraph_fs;
         font-weight: 450;
         cursor: pointer;
         position: relative;

@@ -1,5 +1,5 @@
 .story{
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
     background-color: rgba($color-white,.6);
@@ -38,7 +38,7 @@
         transform: translate(-50%, 20%);
         text-transform: uppercase;
         text-align: center;
-        font-size: 1rem;
+        font-size: $paragraph_fs;
         opacity: 0;
         transition: all .5s;
         backface-visibility: hidden;

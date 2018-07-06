@@ -7,7 +7,7 @@
 
 .section-features{
     margin-top: -10vh;
-    padding: 20rem 0;
+    padding: 12rem 0;
     background-image: linear-gradient(to right bottom, 
 	rgba($color-primary-light,0.8),
 	rgba($color-primary-dark, 0.8)), 
@@ -35,7 +35,8 @@
 }
 
 .section-book{
-    padding: 12rem 6rem 6rem 0;
+    height: 68rem;
+    padding: 6rem 6rem 6rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
 }
 
@@ -49,7 +50,7 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .6);
 
-    height: 40rem;
+    height: 48rem;
 
     &__form{
         width: 50%;
