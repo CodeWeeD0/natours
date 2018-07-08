@@ -1,5 +1,5 @@
 .feature-box{
-    //margin-left: 2rem;
+    margin: 0 auto;
     height: 8rem;
     width: 20rem;
     background-color: rgba($color-white, .8);
@@ -16,10 +16,24 @@
         display: inline-block;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
 	    -webkit-background-clip: text;
-	    color: transparent;
+        color: transparent;
+        
+        @include respond(phone){
+            font-size: 6.5rem;
+        }
     }
 
     &:hover{
         transform: translateY(-1.5rem) scale(1.03);
+    }
+
+    @include respond(tab-port){
+        height: 34rem;
+        width: 25rem;
+        font-size: $paragraph_fs + .5;
+    }
+
+    @include respond(phone){
+        font-size: $paragraph_fs + .8;
     }
 }

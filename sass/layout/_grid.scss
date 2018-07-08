@@ -1,20 +1,37 @@
 .row {
     margin: 0 auto;
-    //margin-left: auto;
-    padding: 0 2% 2% 10%;
     max-width: $grid-width;
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
+
+        @include respond(tab-port){
+            margin-bottom: 0;
+            max-width: $grid-width - 80;
+        }
+    }
+
+    @include respond(tab-port){
+        margin-bottom: $gutter-vertical - 5 !important;
     }
 
     @include clearfix;
     
     [class^="col-"]{
+        
         border-radius: 5px;
         float: left;
-        padding: 0 2% 0;
         &:not(:last-child){
             margin-right: 3rem;
+
+            @include respond(tab-port){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical - 4;
+            }
+        }
+
+        @include respond(tab-port){
+            border-radius: 3px;
+            width: 100% !important;
         }
     }
 

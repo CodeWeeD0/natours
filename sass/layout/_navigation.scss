@@ -65,7 +65,7 @@
         &:visited{
             display: inline-block;
             border-radius: 2px;
-            font-size: 2rem;
+            font-size: $paragraph_fs + 1.5;
             font-weight: 300;
             padding: .5rem 1.2rem;
             color: $color_white;
@@ -76,6 +76,9 @@
             backface-visibility: hidden;
             transition: all .3s;
 
+            @include respond(phone){
+                font-size: $paragraph_fs + 2;
+            }
             span{
                 margin-right: 1rem;
             }
@@ -90,7 +93,7 @@
     }
 
     &__checkbox:checked ~ &__background{
-        transform: scale(95);
+        transform: scale(150);
     }
 
     &__checkbox:checked ~ &__nav{
