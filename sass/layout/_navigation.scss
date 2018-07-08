@@ -10,11 +10,12 @@
         width: 4.5rem;
         border-radius: 50%;
         position: fixed;
-        top: 3.2rem;
-        right: 3.2rem;
+        top: 4rem;
+        right: 4rem;
         z-index: 2000;
         text-align: center;
         cursor: pointer;
+
     }
 
     &__background{
@@ -22,8 +23,8 @@
         width: 4rem;
         border-radius: 50%;
         position: fixed;
-        top: 3.5rem;
-        right: 3.5rem;
+        top: 4rem;
+        right: 4rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         box-shadow: 1rem 1rem 3rem rgba($color-black, .3);
@@ -89,7 +90,7 @@
     }
 
     &__checkbox:checked ~ &__background{
-        transform: scale(80);
+        transform: scale(95);
     }
 
     &__checkbox:checked ~ &__nav{

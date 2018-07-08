@@ -6,6 +6,8 @@
 1200-1800: normal
 
 1800px+ : big desktop
+
+order: Base + typography > general layout + grid > page layout > components
 */
 @keyframes moveInTop {
   0% {
@@ -60,14 +62,17 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 20px; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: 'Lato';
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-  padding: 20px; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -78,14 +83,22 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 30px;
+    letter-spacing: 2rem;
     animation: moveInTop 0.9s; }
+    @media (max-width: 37.5em) {
+      .heading-primary-main {
+        font-size: 6rem -1;
+        letter-spacing: 1rem; } }
   .heading-primary-sub {
     display: block;
     font-size: 6rem -3.5;
-    font-weight: 550;
-    letter-spacing: 15.4px;
+    font-weight: 400;
+    letter-spacing: 1.2rem;
     animation: moveInLeft 0.9s; }
+    @media (max-width: 37.5em) {
+      .heading-primary-sub {
+        font-size: 6rem -1.5;
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   margin-top: 20rem;
@@ -502,7 +515,7 @@ body {
     padding-right: 2rem;
     padding-bottom: 2rem;
     font-size: 1.4rem;
-    font-weight: 350;
+    font-weight: 400;
     column-count: 2;
     column-gap: 2rem;
     column-rule: 1px solid #999;
@@ -627,7 +640,13 @@ body {
     top: 40px;
     left: 40px; }
   .header .logo {
-    height: 35px; }
+    height: 30px; }
+    @media (max-width: 56.25em) {
+      .header .logo {
+        height: 25px; } }
+    @media (max-width: 56.25em) {
+      .header .logo {
+        height: 20px; } }
   .header .logo:hover {
     animation: rotate 0.5s; }
   .header .text-box {
@@ -646,8 +665,8 @@ body {
   width: 4.5rem;
   border-radius: 50%;
   position: fixed;
-  top: 3.2rem;
-  right: 3.2rem;
+  top: 4rem;
+  right: 4rem;
   z-index: 2000;
   text-align: center;
   cursor: pointer; }
@@ -657,8 +676,8 @@ body {
   width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: 3.5rem;
-  right: 3.5rem;
+  top: 4rem;
+  right: 4rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.3);
@@ -709,7 +728,7 @@ body {
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
+  transform: scale(95); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;

@@ -4,7 +4,6 @@ body{
 	//font-size: 14px;
 	line-height: 1.7;
 	color:  $color-grey-dark;
-	padding: 20px;
 }
 
 .heading-primary{
@@ -17,16 +16,25 @@ body{
 		display: block;
 		font-size: $heading_primary_fs;
 		font-weight: 400;
-		letter-spacing: 30px;
+		letter-spacing: 2rem;
 		animation: moveInTop 0.9s;
+		
+		@include respond(phone){
+			font-size: $heading_primary_fs -1;
+			letter-spacing: 1rem;
+		}
 	}
 
 	&-sub{
 		display: block;
 		font-size: $heading_primary_fs -3.5;
-		font-weight: 550;
-		letter-spacing: 15.4px;
+		font-weight: 400;
+		letter-spacing: 1.2rem;
 		animation: moveInLeft 0.9s;
+		@include respond(phone){
+			font-size: $heading_primary_fs -1.5;
+			letter-spacing: .5rem;
+		}
 	}
 }
 

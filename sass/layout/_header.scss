@@ -16,7 +16,14 @@
 	}
 
 	.logo{
-		height: 35px;
+		height: 30px;
+
+		@include respond(tab-port){
+			height: 25px;
+		}
+		@include respond(tab-port){
+			height: 20px;
+		}
 	}
 	
 	.logo:hover{
