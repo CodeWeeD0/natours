@@ -243,7 +243,7 @@ body {
   position: relative;
   height: 50rem; }
   .card__side {
-    width: 100%;
+    width: 90%;
     height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -706,7 +706,7 @@ body {
   border-radius: 50%;
   position: fixed;
   top: 4rem;
-  right: 4rem;
+  right: 4.2rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.3);
