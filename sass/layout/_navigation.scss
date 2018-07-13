@@ -16,6 +16,11 @@
         text-align: center;
         cursor: pointer;
 
+        @include respond(tab-port){
+            height: 5.5rem;
+            width: 5.5rem;
+        }
+
     }
 
     &__background{
@@ -29,6 +34,11 @@
         z-index: 1000;
         box-shadow: 1rem 1rem 3rem rgba($color-black, .3);
         transition: all .6s cubic-bezier(.88,.85,.18,.98);
+
+        @include respond(tab-port){
+            height: 4rem + 1;
+            width: 4rem + 1;
+        }
     }
 
     &__nav{
@@ -105,6 +115,10 @@
     &__icon{
         position: relative;
         margin-top: 2.3rem;
+
+        @include respond(tab-port){
+            margin-top: 2.8rem;
+        } 
         &,
         &::before,
         &::after{
@@ -113,6 +127,11 @@
             background-color: $color-grey-dark-3;
             display: inline-block;
             transition: all .2s;
+
+            @include respond(tab-port){
+                width: 2rem;
+                height: 2px;
+            } 
         }
 
         &::before,
@@ -122,8 +141,18 @@
             left: 0;
         }
 
-        &::before{ top: -.6rem; }
-        &::after{ top: .6rem; }
+        &::before{ 
+            top: -.6rem;
+            @include respond(tab-port){
+                top: -.8rem;
+            } 
+        }
+        &::after{ 
+            top: .6rem;
+            @include respond(tab-port){
+                top: .8rem;
+            }  
+        }
     }
 
     &__button:hover &__icon::before{

@@ -12,6 +12,7 @@
 
     @include respond(tab-port){
         margin-bottom: $gutter-vertical - 5 !important;
+        //padding: 0 3rem;
     }
 
     @include clearfix;

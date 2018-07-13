@@ -4,7 +4,7 @@
     height: 90rem;
     padding: 12rem;
     @include respond(tab-port){
-        margin-top: -10vh;
+        margin-top: -20vh;
         padding-bottom: 10rem;
         height: 130rem;
     }
@@ -39,6 +39,12 @@
     //padding: 15rem 0;
     padding-bottom: 10rem;
     position: relative;
+
+    @include respond(tab-port){
+        margin-top: -10rem;
+        padding-bottom: 6rem;
+    }
+    
 }
 
 .section-book{
