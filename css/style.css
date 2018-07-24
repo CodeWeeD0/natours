@@ -330,6 +330,45 @@ body {
   .card__price-value {
     font-size: 5rem;
     font-weight: 280; }
+  @media (max-width: 75em) {
+    .card {
+      position: relative;
+      height: 90rem; }
+      .card__side {
+        width: 95%;
+        position: relative;
+        backface-visibility: hidden;
+        border-radius: 15px;
+        box-shadow: none; }
+        .card__side--front {
+          background-color: #fff; }
+        .card__side--back {
+          margin-top: -20%;
+          transform: rotateY(0);
+          height: 30%;
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 20%, 100% 10%, 100% 100%, 0 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card:hover .card__side--back {
+        transform: rotateY(0); }
+      .card__cta {
+        position: relative;
+        padding-top: 2.5rem;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        text-align: center; }
+      .card__price--box {
+        text-align: center;
+        color: #fff;
+        margin-bottom: .5rem; }
+      .card__price-only {
+        font-weight: 400;
+        font-size: 2.5rem;
+        text-transform: uppercase; }
+      .card__price-value {
+        font-size: 5.5rem;
+        font-weight: 280; } }
 
 .composition {
   position: relative; }
@@ -580,11 +619,14 @@ body {
 .footer {
   background-color: #333;
   padding: 10rem 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400; }
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 3rem; } }
+  @media (max-width: 37.5em) {
+    .footer {
+      font-size: 3rem; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 6rem; }
@@ -605,10 +647,13 @@ body {
   .footer__list {
     list-style: none; }
   .footer__item {
-    font-size: 2.4rem;
+    font-size: 2rem;
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 1.2rem; }
+    @media (max-width: 37.5em) {
+      .footer__item {
+        font-size: 3rem; } }
   .footer__link:link, .footer__link:visited {
     background-color: #333;
     color: #f7f7f7;

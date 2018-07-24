@@ -1,11 +1,14 @@
 .footer{
     background-color: $color-grey-dark-3;
     padding: 10rem 0;
-    font-size: $heading_tertiary_fs +1;
+    font-size: 2rem;
     font-weight: 400;
 
     @include respond(tab-port){
         padding: 8rem 3rem;
+    }
+    @include respond(phone){
+        font-size: 3rem;
     }
 
     &__logo-box{
@@ -38,10 +41,13 @@
     }
 
     &__item{
-        font-size: $paragraph_fs+1;
+        font-size: 2rem;
         display: inline-block;
         &:not(:last-child){
             margin-right: 1.2rem;
+        }
+        @include respond(phone){
+            font-size: 3rem;
         }
     }
 
