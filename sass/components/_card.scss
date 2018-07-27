@@ -207,4 +207,21 @@
         }
     
     }
+
+    @include respond(tab-port){
+        height: 80rem;
+
+
+
+        &__price-only{
+            font-weight: 400;
+            font-size: 2rem;
+            text-transform: uppercase;
+          }
+      
+          &__price-value{
+            font-size: 5rem;
+            font-weight: 280;
+          }
+    }
 }

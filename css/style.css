@@ -129,6 +129,10 @@ body {
   font-weight: 450; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+  @media (max-width: 56.25em) {
+    .paragraph {
+      font-size: 1.5rem;
+      font-weight: 530; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -369,6 +373,16 @@ body {
       .card__price-value {
         font-size: 5.5rem;
         font-weight: 280; } }
+  @media (max-width: 56.25em) {
+    .card {
+      height: 80rem; }
+      .card__price-only {
+        font-weight: 400;
+        font-size: 2rem;
+        text-transform: uppercase; }
+      .card__price-value {
+        font-size: 5rem;
+        font-weight: 280; } }
 
 .composition {
   position: relative; }
@@ -396,6 +410,29 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
+  @media (max-width: 56.25em) {
+    .composition {
+      margin-top: 5%;
+      margin-left: 25%;
+      width: 100rem;
+      text-align: center;
+      display: block; }
+      .composition__photo {
+        width: 25%; }
+        .composition__photo--p1 {
+          left: -18%;
+          top: 0rem; }
+        .composition__photo--p2 {
+          right: 56%;
+          top: 0rem; }
+        .composition__photo--p3 {
+          left: 0;
+          top: 1rem; }
+      .composition:hover {
+        outline: 0 solid #55c57a;
+        transform: scale(0) translateY(0);
+        box-shadow: 0 0 0;
+        z-index: 0; } }
 
 .feature-box {
   margin: 0 auto;
@@ -701,7 +738,7 @@ body {
         max-width: 34rem; } }
   @media (max-width: 56.25em) {
     .row {
-      margin-bottom: 3rem !important; } }
+      margin-bottom: 4rem !important; } }
   .row::after {
     content: "";
     display: block;
@@ -723,6 +760,9 @@ body {
     width: calc((100% - 6rem)/2); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem)/3); }
+    @media (max-width: 56.25em) {
+      .row .col-1-of-3 {
+        height: 72rem !important; } }
   .row .col-2-of-3 {
     width: calc(100% - (100% - 2 * 6rem)/3 - 6rem); }
   .row .col-1-of-4 {
@@ -901,23 +941,33 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  margin-top: -20vh;
-  height: 90rem;
+  margin-top: -30vh;
+  height: 94rem;
   padding: 12rem; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .section-about {
       margin-top: -20vh;
-      padding-bottom: 10rem;
-      height: 130rem; } }
+      padding-bottom: 8rem;
+      height: 110rem; } }
+  @media (max-width: 56.25em) {
+    .section-about {
+      margin-top: -22vh;
+      padding-bottom: 8rem;
+      height: 135rem; } }
 
 .section-features {
-  margin-top: -10vh;
-  padding: 12rem 0;
+  margin-top: -20vh;
+  padding: 10rem 0 10rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/nat-4.jpg);
   background-size: cover;
-  transform: skewY(-5deg); }
+  transform: skewY(-4deg); }
   .section-features > * {
-    transform: skewY(5deg); }
+    transform: skewY(4deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      transform: skewY(-8deg); }
+      .section-features > * {
+        transform: skewY(8deg); } }
 
 .section-tours {
   background-color: #f7f7f7;
@@ -951,11 +1001,12 @@ body {
   @media (max-width: 75em) {
     .book {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../images/nat-10.jpg);
-      width: 65rem; }
+      width: 82rem; }
       .book__form {
-        width: 65%; } }
+        width: 78%; } }
   @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../images/nat-10.jpg); }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../images/nat-10.jpg);
+      width: 50rem; }
       .book__form {
         width: 100%; } }

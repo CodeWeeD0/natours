@@ -11,7 +11,7 @@
     }
 
     @include respond(tab-port){
-        margin-bottom: $gutter-vertical - 5 !important;
+        margin-bottom: $gutter-vertical - 4 !important;
         //padding: 0 3rem;
     }
 
@@ -25,6 +25,7 @@
             margin-right: 3rem;
 
             @include respond(tab-port){
+                
                 margin-right: 0;
                 margin-bottom: $gutter-vertical - 4;
             }
@@ -42,6 +43,10 @@
 
     .col-1-of-3{
         width: calc((100% - 2 * #{$gutter-horizontal})/3);
+
+        @include respond(tab-port){
+            height: 72rem!important;
+        }
     }
 
     .col-2-of-3{

@@ -1,30 +1,46 @@
 .section-about{
     background-color: $color-grey-light-1;
-    margin-top: -20vh;
-    height: 90rem;
+    margin-top: -30vh;
+    height: 94rem;
     padding: 12rem;
-    @include respond(tab-port){
+    @include respond(tab-land){
         margin-top: -20vh;
-        padding-bottom: 10rem;
-        height: 130rem;
+        padding-bottom: 8rem;
+        height: 110rem;
+        //font-size: 
+    }
+    @include respond(tab-port){
+        margin-top: -22vh;
+        padding-bottom: 8rem;
+        height: 135rem;
+        //font-size: 
     }
  
 }
 
 .section-features{
     //align-content: center;
-    margin-top: -10vh;
-    padding: 12rem 0;
+    margin-top: -20vh;
+    //height: 54rem;
+    padding: 10rem 0 10rem 0;
     background-image: linear-gradient(to right bottom, 
 	rgba($color-primary-light,0.8),
 	rgba($color-primary-dark, 0.8)), 
     url(../images/nat-4.jpg);
     background-size: cover;
 
-    transform: skewY(-5deg);
+    transform: skewY(-4deg);
 
     &>*{
-        transform: skewY(5deg);
+        transform: skewY(4deg);
+    }
+
+    @include respond(tab-port){
+        transform: skewY(-8deg);
+
+    &>*{
+        transform: skewY(8deg);
+    }
     }
 }
 
@@ -77,9 +93,10 @@
         rgba($color-white,.9) 65%,
         transparent 65%)
         ,url(../images/nat-10.jpg);
-        width: 65rem;
+        
+        width: 82rem;
         &__form{
-            width: 65%;
+            width: 78%;
         }
     }
 
@@ -89,6 +106,7 @@
         rgba($color-white,.9) 100%)
         ,url(../images/nat-10.jpg);
 
+        width: 50rem;
         &__form{
             width: 100%;
         }
