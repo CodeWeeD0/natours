@@ -11,6 +11,10 @@
     visibility: hidden;
     transition: all .3s;
 
+
+    @include respond(phone){
+        width: 100%;
+    }
     //open states
     &:target{
         opacity: 1;
@@ -47,6 +51,11 @@
         left: 50%;
         transform: translate(-50%, -50%) scale(.5);
         display: table;
+
+        @include respond(phone){
+           height: 60rem; 
+           display: table-column;
+        }
     }
 
     &:target &__content{
@@ -58,6 +67,11 @@
     &__left{
         width: 33.3333333%;
         display: table-cell;
+
+        @include respond(phone){
+            width: 100%;
+            display: block;
+        }
     }
 
     &__right{
@@ -68,8 +82,31 @@
         &-container{
             margin-top: -5rem;
             position: absolute;
-            top: -10%;
+            top: -5%;
             left: 40%;
+        }
+
+        @include respond(tab-port){
+            &-container{
+                margin-top: 0rem;
+                position: absolute;
+                top: -5%;
+                left: 40%;
+            }
+        }
+
+        @include respond(tab-port){
+            &-container{
+                margin-top: 0rem;
+                position: absolute;
+                top: -30%;
+                left: 40%;
+            }
+        }
+
+        @include respond(phone){
+            width: 100%;
+            display: block;
         }
     }
 
@@ -88,5 +125,19 @@
         column-gap: 2rem;
         column-rule: 1px solid $color-grey-dark-2;
         hyphens: auto;
+
+        margin-bottom: 10rem;
+
+        @include respond(tab-land){
+            margin-bottom: -1rem;
+        }
+
+        @include respond(tab-port){
+            margin-bottom: 3rem;
+        }
+
+        @include respond(phone){
+            margin-bottom: 1rem;
+        }
     }
 }

@@ -6,13 +6,14 @@
     @include respond(tab-land){
         margin-top: -20vh;
         padding-bottom: 8rem;
-        height: 110rem;
+        height: 120rem;
         //font-size: 
     }
     @include respond(tab-port){
         margin-top: -22vh;
         padding-bottom: 8rem;
         height: 135rem;
+        //width: 80rem;
         //font-size: 
     }
  

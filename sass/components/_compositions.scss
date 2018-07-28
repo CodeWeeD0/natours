@@ -38,9 +38,45 @@
     }
 
     @include respond(tab-port){
+        margin-top: 1%;
+        margin-left: 25%;
+        width: 120%;
+        text-align: center;
+        display: block;
+        &__photo{
+            width: 25%;
+            &--p1{
+                left: -18%;
+                top: 0rem;
+            }
+
+            &--p2{
+                right: 56%;
+                top: 0rem;
+            }
+
+            &--p3{
+                left: 0;
+                top: 1rem;
+
+            }
+        }
+
+
+        &:hover{
+            outline: 0 solid $color-primary;
+            transform: scale(0) translateY(0);
+            box-shadow: 0 0 0;
+            z-index: 0;
+            //pointer-events: none;
+        }
+    }
+
+
+    @include respond(phone){
         margin-top: 5%;
         margin-left: 25%;
-        width: 100rem;
+        width: 160%;
         text-align: center;
         display: block;
         &__photo{
