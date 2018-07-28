@@ -24,16 +24,37 @@
     
     &__close{
         position: absolute;
-        top: 10rem;
-        right: 2.5rem;
+        top: 15rem;
+        right: 1.5rem;
         display: inline-block;
 
         text-decoration: none;
-        font-size: $heading_secondary_fs;
+        font-size: $heading_secondary_fs+1;
         color: $color-grey-dark-2;
 
         &:hover{
             color: $color-primary;
+        }
+
+        @include respond(big-desk){
+            top: 12.5rem;
+            right: 2.5rem;
+
+            font-size: $heading_secondary_fs+1.2;
+        }
+
+        @include respond(tab-land){
+            top: 13rem;
+            right: 1.2rem;
+
+            font-size: $heading_secondary_fs+.5;
+        }
+
+        @include respond(phone){
+            top: 13rem;
+            right: .8rem;
+
+            font-size: $heading_secondary_fs+.8;
         }
     }
 
@@ -53,8 +74,11 @@
         display: table;
 
         @include respond(phone){
-           height: 60rem; 
-           display: table-column;
+            height: 10rem;
+        }
+
+        @include respond(tab-land){
+            height: 34rem;
         }
     }
 
@@ -68,9 +92,12 @@
         width: 33.3333333%;
         display: table-cell;
 
+        @include respond(tab-land){
+            width: 36%;
+        }
         @include respond(phone){
-            width: 100%;
-            display: block;
+            visibility: hidden;
+            display: none;
         }
     }
 
@@ -82,20 +109,30 @@
         &-container{
             margin-top: -5rem;
             position: absolute;
-            top: -5%;
+            top: -22%;
             left: 40%;
         }
 
-        @include respond(tab-port){
+        @include respond(big-desk){
             &-container{
-                margin-top: 0rem;
+                margin-top: -5rem;
                 position: absolute;
-                top: -5%;
+                top: -10%;
+                left: 38%;
+            }
+        }
+        @include respond(tab-land){
+            &-container{
+                margin-top: -5rem;
+                position: absolute;
+                top: -22%;
                 left: 40%;
             }
         }
 
         @include respond(tab-port){
+            width: 100%;
+
             &-container{
                 margin-top: 0rem;
                 position: absolute;
@@ -107,12 +144,22 @@
         @include respond(phone){
             width: 100%;
             display: block;
+            &-container{
+                margin-top: 0rem;
+                position: absolute;
+                top: -40%;
+                left: 10%;
+            }
         }
     }
 
     &__img{
         display: block;
         width: 100%;
+
+        @include respond(tab-port){
+            height: 22rem;
+        }
     }
 
     &__text{
@@ -126,7 +173,7 @@
         column-rule: 1px solid $color-grey-dark-2;
         hyphens: auto;
 
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
 
         @include respond(tab-land){
             margin-bottom: -1rem;
@@ -137,6 +184,7 @@
         }
 
         @include respond(phone){
+            padding-top: 3rem;
             margin-bottom: 1rem;
         }
     }

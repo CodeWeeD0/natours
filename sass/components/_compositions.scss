@@ -1,110 +1,104 @@
-.composition{
-    position: relative;
+.composition {
+  position: relative;
 
-    &__photo{
-        width:50%;
-        box-shadow: 0 1.5rem 3rem rgba($color-black, .4);
-        border-radius: 3px;
-        position: absolute;
-        z-index: 10;
-        transition: all .05s;
-        outline-offset: 2rem;
+  &__photo {
+    width: 50%;
+    box-shadow: 0 1.5rem 3rem rgba($color-black, 0.4);
+    border-radius: 3px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.05s;
+    outline-offset: 2rem;
 
-        &--p1{
-            left: -5%;
-            top: -2rem;
-        }
-
-        &--p2{
-            right: 10%;
-            top: 0;
-        }
-
-        &--p3{
-            left: 10%;
-            top: 5rem;
-
-        }
-
-        &:hover{
-            outline: 1rem solid $color-primary;
-            transform: scale(1.05) translateY(-.5rem);
-            box-shadow: 0 2.5rem 3rem rgba($color-black, .8);
-            z-index: 20;
-        }
-    }
-    &:hover &__photo:not(:hover){
-        transform: scale(0.9);
+    &--p1 {
+      left: -5%;
+      top: -2rem;
     }
 
-    @include respond(tab-port){
-        margin-top: 1%;
-        margin-left: 25%;
-        width: 120%;
-        text-align: center;
-        display: block;
-        &__photo{
-            width: 25%;
-            &--p1{
-                left: -18%;
-                top: 0rem;
-            }
-
-            &--p2{
-                right: 56%;
-                top: 0rem;
-            }
-
-            &--p3{
-                left: 0;
-                top: 1rem;
-
-            }
-        }
-
-
-        &:hover{
-            outline: 0 solid $color-primary;
-            transform: scale(0) translateY(0);
-            box-shadow: 0 0 0;
-            z-index: 0;
-            //pointer-events: none;
-        }
+    &--p2 {
+      right: 10%;
+      top: 0;
     }
 
-
-    @include respond(phone){
-        margin-top: 5%;
-        margin-left: 25%;
-        width: 160%;
-        text-align: center;
-        display: block;
-        &__photo{
-            width: 25%;
-            &--p1{
-                left: -18%;
-                top: 0rem;
-            }
-
-            &--p2{
-                right: 56%;
-                top: 0rem;
-            }
-
-            &--p3{
-                left: 0;
-                top: 1rem;
-
-            }
-        }
-
-
-        &:hover{
-            outline: 0 solid $color-primary;
-            transform: scale(0) translateY(0);
-            box-shadow: 0 0 0;
-            z-index: 0;
-            //pointer-events: none;
-        }
+    &--p3 {
+      left: 10%;
+      top: 5rem;
     }
+
+    &:hover {
+      outline: 1rem solid $color-primary;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 3rem rgba($color-black, 0.8);
+      z-index: 20;
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.9);
+  }
+
+  @include respond(tab-port) {
+    margin-top: 1%;
+    margin-left: 5%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    &__photo {
+      width: 35%;
+      &--p1 {
+        left: 0%;
+        top: 0rem;
+      }
+
+      &--p2 {
+        right: 0%;
+        top: 0rem;
+      }
+
+      &--p3 {
+        left: 32%;
+        top: 1rem;
+      }
+    }
+
+    &:hover {
+      outline: 0 solid $color-primary;
+      transform: scale(0) translateY(0);
+      box-shadow: 0 0 0;
+      z-index: 0;
+      //pointer-events: none;
+    }
+  }
+
+  @include respond(phone) {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    &__photo {
+      width: 30%;
+      &--p1 {
+        left: 0%;
+        top: 0rem;
+      }
+
+      &--p2 {
+        right: 12%;
+        top: 0rem;
+      }
+
+      &--p3 {
+        left: 29%;
+        top: 1rem;
+      }
+    }
+
+    &:hover {
+      outline: 0 solid $color-primary;
+      transform: scale(0) translateY(0);
+      box-shadow: 0 0 0;
+      z-index: 0;
+      //pointer-events: none;
+    }
+  }
 }
